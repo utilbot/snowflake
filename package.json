@@ -1,12 +1,15 @@
 {
   "name": "@utilbot/snowflake",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Snowflake Generator",
   "main": "src/Snowflake.js",
   "types": "src/Snowflake.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+		"clean:node": "rimraf src/*.{js,mjs,d.ts,*map}",
+		"clean": "run-p clean:*",
+    "prepublishOnly": "npm run build",
+    "postpublish": "run-s clean"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Utilbot/snowflake/issues"
   },
-  "homepage": "https://github.com/Utilbot/snowflake#readme"
+  "homepage": "https://github.com/Utilbot/snowflake#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
