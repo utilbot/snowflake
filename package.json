@@ -1,6 +1,6 @@
 {
   "name": "@utilbot/snowflake",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "description": "Snowflake Generator",
   "main": "src/Snowflake.js",
   "types": "src/Snowflake.d.ts",
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/Utilbot/snowflake.git"
   },
-  "author": "HerrTxbias",
+	"files": [
+		"Snowflake.{js,js.map,d.ts,d.ts.map,mjs}"
+	],
+  "author": "HerrTxbias <admin@herrtxbias.net>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Utilbot/snowflake/issues"
