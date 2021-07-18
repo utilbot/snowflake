@@ -17,19 +17,19 @@ declare type SnowflakeConfig = {
      * Defaults to the timestamp of the first second of 2020.
      * @default 1577833200000
      */
-    epoch: number;
+    epoch?: number;
     /**
      * The worker ID.
      * Defaults to 1.
      * @default 1
      */
-    workerID: number;
+    workerID?: number;
     /**
      * The process ID.
      * Defaults to 1.
      * @default 1
      */
-    processID: number;
+    processID?: number;
 };
 export {};
 //# sourceMappingURL=Snowflake.d.ts.map
