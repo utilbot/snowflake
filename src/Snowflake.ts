@@ -11,6 +11,21 @@ export class SnowflakeUtil {
         this.workerID = config && config.workerID || 1;
         this.processID = config && config.processID || 1;
         this.increment = 1;
+
+        if(config)
+            this.validateConfig(config);
+    }
+
+    private validateConfig(config: SnowflakeConfig): void {
+        if (config.epoch && (typeof config.epoch !== 'number' || config.epoch < 0 || config.epoch > 4398046511103)) {
+            throw new Error(`Epoch must be a number between 0 and 4398046511103, got ${config.epoch}`);
+        }
+        if (config.workerID && (typeof config.workerID !== 'number' || config.workerID < 0 || config.workerID > 31)) {
+            throw new Error(`Worker ID must be a number between 0 and 31, got ${config.workerID}`);
+        }
+        if (config.processID && (typeof config.processID !== 'number' || config.processID < 0 || config.processID > 31)) {
+            throw new Error(`Process ID must be a number between 0 and 31, got ${config.processID}`);
+        }
     }
 
     public generate(): Snowflake {
