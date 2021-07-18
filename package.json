@@ -9,7 +9,7 @@
 		"clean:node": "rimraf src/*.{js,mjs,d.ts,*map}",
 		"clean": "run-p clean:*",
     "prepublishOnly": "npm run build",
-    "postpublish": "run-s clean"
+    "postpublish": "npm run clean"
   },
   "repository": {
     "type": "git",
