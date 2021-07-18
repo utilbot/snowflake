@@ -1,0 +1,21 @@
+{
+  "name": "@utilbot/snowflake",
+  "version": "0.1.1",
+  "description": "Snowflake Generator",
+  "main": "src/Snowflake.js",
+  "types": "src/Snowflake.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Utilbot/snowflake.git"
+  },
+  "author": "HerrTxbias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Utilbot/snowflake/issues"
+  },
+  "homepage": "https://github.com/Utilbot/snowflake#readme"
+}
