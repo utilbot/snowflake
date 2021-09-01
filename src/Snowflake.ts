@@ -1,4 +1,4 @@
-export type Snowflake = `${bigint}`;
+export type Snowflake = string;
 
 export class SnowflakeUtil {
     private epoch: number;
