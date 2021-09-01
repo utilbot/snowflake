@@ -1,6 +1,6 @@
 {
   "name": "@utilbot/snowflake",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Snowflake Generator",
   "main": "src/Snowflake.js",
   "types": "src/Snowflake.d.ts",
